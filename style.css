@@ -1,0 +1,88 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Playfair+Display:ital,wght@0,400;0,900;1,400&family=Poppins:wght@500&family=Rubik+Iso&display=swap');
+
+/* variable */
+  :root{
+    --light:#ffffff;
+    --primary: #2a325b;
+    --secondary: #f4a92f;
+    --secondary-light:rgba(244, 169, 47, 0.9);
+    --dark: #222222;
+    --red: #ff0000;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: blueviolet;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 350px;
+    background-color: var(--light);
+}
+
+.container h1{
+    margin-bottom: 10px;
+
+}
+
+.container p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container .form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form input, .form button{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    border: 1px solid var(--primary);}
+.form button{
+    cursor: pointer;
+    font-weight: 500;
+    background-color: greenyellow;
+    border: 1px solid rgb(0, 0, 0);
+    color: var(--dark);
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.form button:hover{
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+
+}
+
+.form input::-webkit-inner-spin-button,
+.form input::-webkit-outer-spin-button{
+    appearance: none;
+}
+ .container #result{
+  margin-bottom: 0;
+ }
+
+ .container #result.error {
+    color: var(--red);
+ }
